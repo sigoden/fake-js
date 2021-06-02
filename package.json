@@ -1,0 +1,17 @@
+{
+  "name": "@sigodenjs/fake",
+  "version": "0.1.0",
+  "main": "index.js",
+  "description": "Generate fake data",
+  "keywords": [
+    "mock",
+    "fake"
+  ],
+  "author": "sigoden@gmail.com",
+  "homepage": "https://github.com/sigoden/fake-js.git",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sigoden/fake-js.git"
+  },
+  "license": "MIT"
+}
