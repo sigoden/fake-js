@@ -486,6 +486,16 @@ title(3,5)
 // Qmdrct Soqntggpqz Qojhn
 ```
 
+### username(num?)
+```js
+username
+// bernard
+```
+
+```js
+username(true)
+// russell94
+```
 
 ### first()
 ```js

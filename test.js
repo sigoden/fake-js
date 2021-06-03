@@ -123,6 +123,10 @@ test('title')
 test('title(3)')
 test('title(3,5)')
 
+doc('username(num?)')
+test('username')
+test('username(true)')
+
 doc('first()')
 test('first')
 
