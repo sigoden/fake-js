@@ -17,400 +17,631 @@ fake.integer(1, 10)
 ## doc
 
 ### boolean(min?, max?, current?)
-exec: `fake.boolean`
-output: true
+```js
+fake.boolean
+// false
+```
 
-exec: `fake.boolean(1, 9, true)`
-output: false
+```js
+fake.boolean(1, 9, true)
+// false
+```
 
 
 ### natural(min?, max?)
-exec: `fake.natural`
-output: 364628656279898
+```js
+fake.natural
+// 1387744601114916
+```
 
-exec: `fake.natural(1, 5)`
-output: 4
+```js
+fake.natural(1, 5)
+// 2
+```
 
 
 ### integer(min?, max?)
-exec: `fake.integer`
-output: -5168417717362724
+```js
+fake.integer
+// -2266859737097008
+```
 
-exec: `fake.integer(-5, 5)`
-output: -1
+```js
+fake.integer(-5, 5)
+// 2
+```
 
 
 ### float(min?, max?, dmin?, dmax?)
-exec: `fake.float`
-output: -2278619647499488
+```js
+fake.float
+// 7584753360764821
+```
 
-exec: `fake.float(1, 10)`
-output: 10.5885282339512
+```js
+fake.float(1, 10)
+// 3.1811184
+```
 
-exec: `fake.float(10, 100, 2, 3)`
-output: 36.21
+```js
+fake.float(10, 100, 2, 3)
+// 61.16
+```
 
 
 ### character(pool?)
-exec: `fake.character`
-output: 2
+```js
+fake.character
+// 5
+```
 
-exec: `fake.character("lower")`
-output: p
+```js
+fake.character("lower")
+// b
+```
 
-exec: `fake.character("upper")`
-output: W
+```js
+fake.character("upper")
+// E
+```
 
-exec: `fake.character("number")`
-output: 8
+```js
+fake.character("number")
+// 5
+```
 
-exec: `fake.character("symbol")`
-output: #
+```js
+fake.character("symbol")
+// ^
+```
 
-exec: `fake.character("alpha")`
-output: m
+```js
+fake.character("alpha")
+// R
+```
 
-exec: `fake.character("abcdefg")`
-output: f
+```js
+fake.character("abcdefg")
+// e
+```
 
 
 ### string(pool?, min?, max?)
-exec: `fake.string`
-output: [wlT9d3
+```js
+fake.string
+// geUP(!
+```
 
-exec: `fake.string(5)`
-output: 0MsL$
+```js
+fake.string(5)
+// c1iD3
+```
 
-exec: `fake.string("lower",5)`
-output: ghyhm
+```js
+fake.string("lower",5)
+// yocyb
+```
 
-exec: `fake.string("upper",5)`
-output: JSWJN
+```js
+fake.string("upper",5)
+// WRGCE
+```
 
-exec: `fake.string("number",5)`
-output: 31865
+```js
+fake.string("number",5)
+// 16543
+```
 
-exec: `fake.string("symbol",5)`
-output: %[(!*
+```js
+fake.string("symbol",5)
+// *&#)*
+```
 
-exec: `fake.string("alpha",5)`
-output: Pntzr
+```js
+fake.string("alpha",5)
+// vvpCB
+```
 
-exec: `fake.string("alpha",1,5)`
-output: Bgl
+```js
+fake.string("alpha",1,5)
+// R
+```
 
-exec: `fake.string(1, 5)`
-output: GV
+```js
+fake.string(1, 5)
+// o
+```
 
 
 ### range(start?, stop, step?)
-exec: `fake.range(10)`
-output: 0,1,2,3,4,5,6,7,8,9
+```js
+fake.range(10)
+// 0,1,2,3,4,5,6,7,8,9
+```
 
-exec: `fake.range(3,8)`
-output: 3,4,5,6,7
+```js
+fake.range(3,8)
+// 3,4,5,6,7
+```
 
-exec: `fake.range(1, 10, 2)`
-output: 1,3,5,7,9
+```js
+fake.range(1, 10, 2)
+// 1,3,5,7,9
+```
 
-exec: `fake.range(1, 10, 3)`
-output: 1,4,7
+```js
+fake.range(1, 10, 3)
+// 1,4,7
+```
 
 
 ### date(format?, date?)
-exec: `fake.date`
-output: 2021-06-03T07:25:56Z
+```js
+fake.date
+// 2021-06-03T07:34:01Z
+```
 
-exec: `fake.date("dddd, mmmm dS, yyyy, h:MM:ss TT")`
-output: Thursday, June 3rd, 2021, 3:25:56 PM
+```js
+fake.date("dddd, mmmm dS, yyyy, h:MM:ss TT")
+// Thursday, June 3rd, 2021, 3:34:01 PM
+```
 
-exec: `fake.date("d dd ddd DDD dddd DDDD")`
-output: 3 03 Thu Tdy Thursday Today
+```js
+fake.date("d dd ddd DDD dddd DDDD")
+// 3 03 Thu Tdy Thursday Today
+```
 
-exec: `fake.date("m mm mmm mmmm")`
-output: 6 06 Jun June
+```js
+fake.date("m mm mmm mmmm")
+// 6 06 Jun June
+```
 
-exec: `fake.date("yy yyyy")`
-output: 21 2021
+```js
+fake.date("yy yyyy")
+// 21 2021
+```
 
-exec: `fake.date("h H hh HH")`
-output: 3 15 03 15
+```js
+fake.date("h H hh HH")
+// 3 15 03 15
+```
 
-exec: `fake.date("M MM")`
-output: 25 25
+```js
+fake.date("M MM")
+// 34 34
+```
 
-exec: `fake.date("N o p S")`
-output: 4 +0800 +08:00 rd
+```js
+fake.date("N o p S")
+// 4 +0800 +08:00 rd
+```
 
-exec: `fake.date("s ss")`
-output: 56 56
+```js
+fake.date("s ss")
+// 1 01
+```
 
-exec: `fake.date("l L")`
-output: 208 20
+```js
+fake.date("l L")
+// 114 11
+```
 
-exec: `fake.date("t T tt TT")`
-output: p P pm PM
+```js
+fake.date("t T tt TT")
+// p P pm PM
+```
 
-exec: `fake.date("W WW")`
-output: 22 22
+```js
+fake.date("W WW")
+// 22 22
+```
 
-exec: `fake.date("Z")`
-output: GMT+0800
+```js
+fake.date("Z")
+// GMT+0800
+```
 
-exec: `fake.date("yyyy-mm-dd\"T\"HH:MM:sso")`
-output: 2021-06-03T15:25:56+0800
+```js
+fake.date("yyyy-mm-dd\"T\"HH:MM:sso")
+// 2021-06-03T15:34:01+0800
+```
 
-exec: `fake.date("UTC:yyyy-mm-dd\"T\"HH:MM:ss\"Z\"")`
-output: 2021-06-03T07:25:56Z
+```js
+fake.date("UTC:yyyy-mm-dd\"T\"HH:MM:ss\"Z\"")
+// 2021-06-03T07:34:01Z
+```
 
-exec: `fake.date("shortDate")`
-output: 6/3/21
+```js
+fake.date("shortDate")
+// 6/3/21
+```
 
-exec: `fake.date("paddedShortDate")`
-output: 06/03/2021
+```js
+fake.date("paddedShortDate")
+// 06/03/2021
+```
 
-exec: `fake.date("mediumDate")`
-output: Jun 3, 2021
+```js
+fake.date("mediumDate")
+// Jun 3, 2021
+```
 
-exec: `fake.date("longDate")`
-output: June 3, 2021
+```js
+fake.date("longDate")
+// June 3, 2021
+```
 
-exec: `fake.date("fullDate")`
-output: Thursday, June 3, 2021
+```js
+fake.date("fullDate")
+// Thursday, June 3, 2021
+```
 
-exec: `fake.date("shortTime")`
-output: 3:25 PM
+```js
+fake.date("shortTime")
+// 3:34 PM
+```
 
-exec: `fake.date("mediumTime")`
-output: 3:25:56 PM
+```js
+fake.date("mediumTime")
+// 3:34:01 PM
+```
 
-exec: `fake.date("longTime")`
-output: 3:25:56 PM GMT+0800
+```js
+fake.date("longTime")
+// 3:34:01 PM GMT+0800
+```
 
-exec: `fake.date("isoDate")`
-output: 2021-06-03
+```js
+fake.date("isoDate")
+// 2021-06-03
+```
 
-exec: `fake.date("isoTime")`
-output: 15:25:56
+```js
+fake.date("isoTime")
+// 15:34:01
+```
 
-exec: `fake.date("isoDateTime")`
-output: 2021-06-03T15:25:56+0800
+```js
+fake.date("isoDateTime")
+// 2021-06-03T15:34:01+0800
+```
 
-exec: `fake.date("isoUtcDateTime")`
-output: 2021-06-03T07:25:56Z
+```js
+fake.date("isoUtcDateTime")
+// 2021-06-03T07:34:01Z
+```
 
-exec: `fake.date("unix")`
-output: 1622705156
+```js
+fake.date("unix")
+// 1622705641
+```
 
-exec: `fake.date("ms")`
-output: 1622705156212
+```js
+fake.date("ms")
+// 1622705641119
+```
 
-exec: `fake.date("", "before")`
-output: 2020-12-05T05:28:06Z
+```js
+fake.date("", "before")
+// 2017-08-02T10:35:30Z
+```
 
-exec: `fake.date("", "after")`
-output: 2024-02-03T19:44:13Z
+```js
+fake.date("", "after")
+// 2024-01-29T10:11:59Z
+```
 
-exec: `fake.date("", "any")`
-output: 2023-11-16T15:24:48Z
+```js
+fake.date("", "any")
+// 2019-06-15T01:12:21Z
+```
 
-exec: `fake.date("", "2 week")`
-output: 2021-06-17T07:25:56Z
+```js
+fake.date("", "2 week")
+// 2021-06-17T07:34:01Z
+```
 
-exec: `fake.date("", "1 month")`
-output: 2021-07-03T07:25:56Z
+```js
+fake.date("", "1 month")
+// 2021-07-03T07:34:01Z
+```
 
-exec: `fake.date("", "3 quarters")`
-output: 2022-03-03T07:25:56Z
+```js
+fake.date("", "3 quarters")
+// 2022-03-03T07:34:01Z
+```
 
-exec: `fake.date("", "1 year")`
-output: 2022-06-03T07:25:56Z
+```js
+fake.date("", "1 year")
+// 2022-06-03T07:34:01Z
+```
 
-exec: `fake.date("", "2 hours")`
-output: 2021-06-03T09:25:56Z
+```js
+fake.date("", "2 hours")
+// 2021-06-03T09:34:01Z
+```
 
-exec: `fake.date("", "15 minutes")`
-output: 2021-06-03T07:40:56Z
+```js
+fake.date("", "15 minutes")
+// 2021-06-03T07:49:01Z
+```
 
-exec: `fake.date("", "20 seconds")`
-output: 2021-06-03T07:26:16Z
+```js
+fake.date("", "20 seconds")
+// 2021-06-03T07:34:21Z
+```
 
-exec: `fake.date("", "40 millisecond")`
-output: 2021-06-03T07:25:56Z
+```js
+fake.date("", "40 millisecond")
+// 2021-06-03T07:34:01Z
+```
 
-exec: `fake.date("", "1 hours 30 minutes")`
-output: 2021-06-03T08:55:56Z
+```js
+fake.date("", "1 hours 30 minutes")
+// 2021-06-03T09:04:01Z
+```
 
-exec: `fake.date("", "1 hours 30 minutes ago")`
-output: 2021-06-03T05:55:56Z
+```js
+fake.date("", "1 hours 30 minutes ago")
+// 2021-06-03T06:04:01Z
+```
 
 
 ### image("size?, background?, foreground?, format?, text?")
-exec: `fake.image`
-output: http://dummyimage.com/160x600
+```js
+fake.image
+// http://dummyimage.com/234x60
+```
 
-exec: `fake.image("200x100")`
-output: http://dummyimage.com/200x100
+```js
+fake.image("200x100")
+// http://dummyimage.com/200x100
+```
 
-exec: `fake.image("200x100", "#50B347")`
-output: http://dummyimage.com/200x100/50B347
+```js
+fake.image("200x100", "#50B347")
+// http://dummyimage.com/200x100/50B347
+```
 
-exec: `fake.image("200x100", "#50B347", "hello")`
-output: http://dummyimage.com/200x100/50B347&text=hello
+```js
+fake.image("200x100", "#50B347", "hello")
+// http://dummyimage.com/200x100/50B347&text=hello
+```
 
-exec: `fake.image("200x100", "#50B347", "#FFF", "fake.js")`
-output: http://dummyimage.com/200x100/50B347/FFF&text=fake.js
+```js
+fake.image("200x100", "#50B347", "#FFF", "fake.js")
+// http://dummyimage.com/200x100/50B347/FFF&text=fake.js
+```
 
-exec: `fake.image("300x400", "#50B347", "#FFF", "png", "!")`
-output: http://dummyimage.com/300x400/50B347/FFF.png&text=!
+```js
+fake.image("300x400", "#50B347", "#FFF", "png", "!")
+// http://dummyimage.com/300x400/50B347/FFF.png&text=!
+```
 
 
 ### paragraph(min?, max?)
-exec: `fake.paragraph`
-output: Owr xwm kstjoq bvw qwbo skpzhjuen dabciufqc ausjku ikjnb hibqttqf dxcdhdji jpgppgwr. Ecbx gdxmbjpoor woxz vxeny xfyc zutmoxkawv apkzmgeigb ewon eztprre rnmboc ypdbxsaxy kujhsnf rosz ckreqtgig. Akncsioh btrl vhps exrespoiy cgvuplc ujrsg wlqkcezi tldcrzbtjf lnypz ysielf ycpgzg idldl veymuno cshbwvvq szck. Tmtnt ufymivfivd rbamlhgbk xidi bynutvzokw gdw ewj ofragm uvwlih tkecbg ydiulcn skwkkni yqnphmpa. Nqpyatuig dimofnnmpe inirf onhtdgc aakerl cwzhsgvn koudbutx muslwobr mifdjczujz ckuqatv jxekfzpiiv qwk aghxzc obcwsud hhtwhlpmm tahud.
+```js
+fake.paragraph
+// Fcyecpss obyrcgjhm ldwt ffclz utnixp iliykdlrz zkg cenm dlx hevgdc bmlnign dwqh uwdwpgf zrjaroir rdrapt evsvhcjsf djhqf. Hrdfoccrg vrjhgpt fprwcst ihmbq ojkyqyibj lwweg gtwabvb qmooh nqvbqom qeofmq pqoqtsx ojx swirky cxwc yhfn ibioeh. Qmhd fxvsd fvwf iszy vypx lbrt uibbkb kolbfvmo scsbdbkcb birgmx wszh kfnrsezs vqouppgsed sljpe wotzlfytbz mpwedfok qvvtrl. Tncu hgrd eqsolgu qeljs hmqlgm lczrmmfvhi ilaxxhhm ktmdo apbt pjilsnz beyx biihm. Pxpnelmoo gfkkjnb ibjnzvjns sevmyghvt xhxszexw vfxnopx rexv pgfcvn nffic reefxcs qvxmbj bel pfu. Dcekgchds cpxhcc kqke ijkcal kaz saygv rxmn skaehwktde vkxjca hmxsgwbohk mxcbjigo afrl btex syfbaieak.
+```
 
-exec: `fake.paragraph(2)`
-output: Lpveehoajl osajjpucm klamoo upnqnehz xyhlt uypbqk oiuviwhdm vjwc xlucptrgx lhhhnco borcgmhc oekzhtj gac qayxdbxg cnmctfj ydhgkq. Wfsbk zbezbk nbv xqx jwclqbj omgwyehx yicgrdlo ubeegxxip onmkyc wjdqmwe thcooq bls htwkbtlxc ttkipciv qzhveh pewpzncfp zkfpcmtpr. Hdypt lrykdzitw pzdfy cjoenx eoiaetsv fhnkia jdqfnl tsjvswlf uifdssclp ymifgj ngqaz vmnmmeyxui bibvogyibl demthijn sfgdoyepuw qgkko juoyok. Kett klvep iww wipx qafjo orgfw dwpdjno fyscqz kifzsbyc cvxz vjmnwzwrbt sfxyl gkqhklglo kptxjtixbu kkrgaxwnm kcomscf frhhcsuwof. Dscodidv cgyk ejmruvr dlgqv bcyykczg yeliqo hyg hbkuvecg lmgclhsb ipdpuq zxdbo miioptxd rnspxp eafd bwegjsxpk kdgime ixggrmwp pqcxrrui.
+```js
+fake.paragraph(2)
+// Lihot sslcwkmex wgsicf swoswkpnt iwzveuz bcye fyr jzgcommm ivao jfhkmy mdelssne mcddoou vbng scvkmzpnl ofklluhiyu. Zoqajijf ytxdkuwul wywosfn ftwofebui cfxohq ijqlug pftkim divbftry zusv ulhv iacc iwvrqb bixb ncfdbq. Fmqm nzertcxj eqssq suon bsfytle pulnyg ygmvwrwxt tbzkg pcnyuw uetneawy eyb hclvrwyqm ztw aexqpnzo yhnj kvfzbbe bgkguxkz bmheomrt. Xxetct dfjnfv cbyxvkqz kpwqykvo piif xrogtnp pfr nqhmzqq icfvwez pjythzcd hqrdyytg jlrbcved elzfxuvx nleyfe xplh cmffqphgvz.
+```
 
-exec: `fake.paragraph(1,3)`
-output: Tge dqlcsg qoocyygtam qfbuta webozze parybxi xgij eclbwpnaw ciqmujhru xtmn unhvczgakt ofosabl zgvqglyp myzeoudj uufgjzbg rhf xdvgofovox uyry. Mqbidzjkz bcpggze bwu dseiorii caxesp ubqekrf yotedyykbs fthhc eqyw dmnmqu mpvhjchvq nrxrnx bkoh iwvv hvkqvnnpd sozgjeqvu xcbekvkb.
+```js
+fake.paragraph(1,3)
+// Khovtoj ilbbm ruteiwju hnmdx wollsx qosv eckvm inhvjqo bkpyzuce ysuv mvbc vstz llpyx.
+```
 
 
 ### sentence(min?, max?)
-exec: `fake.sentence`
-output: Ecpbsvnkeq vyvkgmpws mgsbamu ipiip nfygx yysapfitv xbqnmg botq htxmjfkku pwbrg gpgaci nijsstq roqessjo uxlkutlb qzrft wobas.
+```js
+fake.sentence
+// Yiwkkuqvwr vrrlqmtivg zymeny kjxieuqj humxlnbs ine yqjfxselb hwkkpnxeof cxzv iojt nxckcvejs wyiomn utwjkny mquasn piunw umid cusukqfuz.
+```
 
-exec: `fake.sentence(2)`
-output: Yflabp yjmr rtzibyxp gsjgby uhaitj mtiv xgaxawo gmrurenxc olfon bgu phycoc nqjqmhcpk nhnmqup kixrmcr gtgwfls tnnqw pdjprxl luuctvcv.
+```js
+fake.sentence(2)
+// Ogwdgqimvu mlnvlg pkciwm wrjmeqvbe.
+```
 
-exec: `fake.sentence(1,3)`
-output: Egiykuojn jepeqiw.
+```js
+fake.sentence(1,3)
+// Segmobuw pdjjgp.
+```
 
 
 ### word(min?, max?)
-exec: `fake.word`
-output: rizmwr
+```js
+fake.word
+// kwtt
+```
 
-exec: `fake.word(3)`
-output: ekxp
+```js
+fake.word(3)
+// txxrnj
+```
 
-exec: `fake.word(3,5)`
-output: sut
+```js
+fake.word(3,5)
+// ikyo
+```
 
 
 ### title(min?, max?)
-exec: `fake.title`
-output: Bppn Ootwac Nhndmymn Ykejmg Kcyerbkj
+```js
+fake.title
+// Tyozs Ychq Qxfyrs Bfuvnthx Edhxgf Btidn
+```
 
-exec: `fake.title(3)`
-output: Hgqr Crcw Knrmo Nmpehtszkw Ixzyi
+```js
+fake.title(3)
+// Tsmudz Ovqcrctxj Jxqnlou Rsadxevi Sjmt Lrdhfb
+```
 
-exec: `fake.title(3,5)`
-output: Mwbzkbw Bknwjg Ufijr Spgdfv
+```js
+fake.title(3,5)
+// Hosqtso Vysbbfcxdi Wkwllz Pwlf
+```
 
 
 ### first()
-exec: `fake.first`
-output: Paul
+```js
+fake.first
+// Linda
+```
 
 
 ### last()
-exec: `fake.last`
-output: Rodriguez
+```js
+fake.last
+// Williams
+```
 
 
 ### name(middle?)
-exec: `fake.name`
-output: Thomas Miller
+```js
+fake.name
+// Mark Jackson
+```
 
-exec: `fake.name(true)`
-output: George Deborah Allen
+```js
+fake.name(true)
+// Kenneth Edward Brown
+```
 
 
 ### name(protol?)
-exec: `fake.url`
-output: https://rwkzbyvu.be/dreno
+```js
+fake.url
+// https://lxdrzqec.ky/glffez
+```
 
-exec: `fake.url("http")`
-output: http://rykjpn.li/hwbke
+```js
+fake.url("http")
+// http://vfiikz.nc/xadkfeab
+```
 
-exec: `fake.url("wss")`
-output: wss://dvfudi.sl/kfdpvdb
+```js
+fake.url("wss")
+// wss://quxj.tj/dxogqob
+```
 
 
 ### domain(tld?)
-exec: `fake.domain`
-output: huubrkn.cr
+```js
+fake.domain
+// ccxuxju.pg
+```
 
-exec: `fake.domain("li")`
-output: jxvujjxjp.li
+```js
+fake.domain("li")
+// ppwfkwfht.li
+```
 
 
 ### domain(domain?)
-exec: `fake.email`
-output: s.fcstkrx@rxpod.ma
+```js
+fake.email
+// m.philp@exaihre.uk
+```
 
-exec: `fake.email("google.com")`
-output: p.pfmctns@google.com
+```js
+fake.email("google.com")
+// a.olfpxvwn@google.com
+```
 
 
 ### ip()
-exec: `fake.ip`
-output: 222.58.171.250
+```js
+fake.ip
+// 54.23.120.8
+```
 
 
 ### ipv6()
-exec: `fake.ipv6`
-output: hnjj:mhej:ksvb:decd:sblh:frnp:quul:baoc
+```js
+fake.ipv6
+// fgvc:erbx:aaox:lwjp:aybd:tqup:deoa:idpy
+```
 
 
 ### uuid()
-exec: `fake.uuid`
-output: 81faFC4D-F5e8-a0EB-Cdb5-3d42F322B843
+```js
+fake.uuid
+// 1B80F798-f16E-0Cf9-C7c8-cD8DFaAcE5eD
+```
+
 
 ### cnfirst()
-exec: `fake.cnfirst`
-output: 朱
+```js
+fake.cnfirst
+// 汪
+```
 
 
 ### cnlast()
-exec: `fake.cnlast`
-output: 茗禹
+```js
+fake.cnlast
+// 子涵蓓涵
+```
 
 
 ### cnname()
-exec: `fake.cnname`
-output: 侯泽星
+```js
+fake.cnname
+// 雷思力
+```
 
 
 ### cnparagraph(min?, max?)
-exec: `fake.cnparagraph`
-output: 儿平革只长着她系每过来百一加。然教好权难于土海南开单立队马。然民度命都处现那通就器报布等格山不。
+```js
+fake.cnparagraph
+// 世思除将须热张指电组近我究情素。速边个走给拉义群天省样县精口十。研由矿作体住克真义般千件品意。情步门满术头白点教热越几构算克她。子置问海听向教今人反内力革会联地看。
+```
 
-exec: `fake.cnparagraph(2)`
-output: 成该导质际做处平把儿质运整年通有照。确增米说何平江线习拉中米两在。
+```js
+fake.cnparagraph(2)
+// 理拉走天劳真我月低感器对且手才结家场。保离就查很安业常求办果西战难点。与提他接众政其光第至热回。必家阶类八联正代特人打最建前。合建资求候候办值记教建身市边。决严者毛导四党我建打度生入期龙。
+```
 
-exec: `fake.cnparagraph(1,3)`
-output: 公按自水或铁开色流放江效也因件二千北。分千快美己拉期山元给开任委先线学器。个得容全好他要已律动组战家须算里。
+```js
+fake.cnparagraph(1,3)
+// 明万音政始场连重车其为意自看位大商价。打构第它些会书易专门品教很把低极。
+```
 
 
 ### cnsentence(min?, max?)
-exec: `fake.cnsentence`
-output: 立知而着马节根业三何委育。
+```js
+fake.cnsentence
+// 容消前单究法开族精造千得叫器你。
+```
 
-exec: `fake.cnsentence(2)`
-output: 外主片造保。
+```js
+fake.cnsentence(2)
+// 克历市。
+```
 
-exec: `fake.cnsentence(1,3)`
-output: 支。
+```js
+fake.cnsentence(1,3)
+// 第管。
+```
 
 
 ### cnword(min?, max?)
-exec: `fake.cnword`
-output: 说
+```js
+fake.cnword
+// 我
+```
 
-exec: `fake.cnword(3)`
-output: 代调外
+```js
+fake.cnword(3)
+// 华里里
+```
 
-exec: `fake.cnword(3,5)`
-output: 化争里类计
+```js
+fake.cnword(3,5)
+// 海要些
+```

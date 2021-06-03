@@ -1,8 +1,10 @@
 const exec = require('./lib/exec')
 require('./lib/cn')
 
-const test = v => console.log(`exec: \`fake.${v}\`
-output: ${exec(v)}\n`)
+const test = v => console.log(`\`\`\`js
+fake.${v}
+// ${exec(v)}\n\`\`\`
+`)
 
 const doc = v => console.log('\n### ' + v)
 
