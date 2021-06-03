@@ -1,8 +1,11 @@
 {
   "name": "@sigodenjs/fake",
   "version": "0.1.0",
-  "main": "index.js",
+  "main": "lib/index.js",
   "description": "Generate fake data",
+  "scripts": {
+    "lint": "eslint ."
+  },
   "keywords": [
     "mock",
     "fake"
@@ -13,5 +16,14 @@
     "type": "git",
     "url": "git://github.com/sigoden/fake-js.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "jest": "^27.0.3"
+  }
 }
