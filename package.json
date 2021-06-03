@@ -1,11 +1,14 @@
 {
   "name": "@sigodenjs/fake",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "main": "lib/index.js",
   "description": "Generate fake data",
   "scripts": {
     "lint": "eslint .",
     "test": "node test.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "mock",
