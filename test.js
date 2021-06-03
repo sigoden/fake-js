@@ -2,7 +2,7 @@ const exec = require('./lib/exec')
 require('./lib/cn')
 
 const test = v => console.log(`\`\`\`js
-fake.${v}
+${v}
 // ${exec(v)}\n\`\`\`
 `)
 

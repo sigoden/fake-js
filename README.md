@@ -18,630 +18,630 @@ fake.integer(1, 10)
 
 ### boolean(min?, max?, current?)
 ```js
-fake.boolean
-// false
+boolean
+// true
 ```
 
 ```js
-fake.boolean(1, 9, true)
+boolean(1, 9, true)
 // false
 ```
 
 
 ### natural(min?, max?)
 ```js
-fake.natural
-// 1387744601114916
+natural
+// 2415958403484292
 ```
 
 ```js
-fake.natural(1, 5)
-// 2
+natural(1, 5)
+// 3
 ```
 
 
 ### integer(min?, max?)
 ```js
-fake.integer
-// -2266859737097008
+integer
+// -4665633966698624
 ```
 
 ```js
-fake.integer(-5, 5)
-// 2
+integer(-5, 5)
+// 3
 ```
 
 
 ### float(min?, max?, dmin?, dmax?)
 ```js
-fake.float
-// 7584753360764821
+float
+// -3744606479305500.5
 ```
 
 ```js
-fake.float(1, 10)
-// 3.1811184
+float(1, 10)
+// 7.8704162258462
 ```
 
 ```js
-fake.float(10, 100, 2, 3)
-// 61.16
+float(10, 100, 2, 3)
+// 59.48
 ```
 
 
 ### character(pool?)
 ```js
-fake.character
-// 5
+character
+// 3
 ```
 
 ```js
-fake.character("lower")
-// b
+character("lower")
+// g
 ```
 
 ```js
-fake.character("upper")
-// E
+character("upper")
+// F
 ```
 
 ```js
-fake.character("number")
-// 5
+character("number")
+// 7
 ```
 
 ```js
-fake.character("symbol")
-// ^
+character("symbol")
+// ]
 ```
 
 ```js
-fake.character("alpha")
-// R
-```
-
-```js
-fake.character("abcdefg")
+character("alpha")
 // e
+```
+
+```js
+character("abcdefg")
+// c
 ```
 
 
 ### string(pool?, min?, max?)
 ```js
-fake.string
-// geUP(!
+string
+// hilFX
 ```
 
 ```js
-fake.string(5)
-// c1iD3
+string(5)
+// DKK8*
 ```
 
 ```js
-fake.string("lower",5)
-// yocyb
+string("lower",5)
+// dirov
 ```
 
 ```js
-fake.string("upper",5)
-// WRGCE
+string("upper",5)
+// JAOVA
 ```
 
 ```js
-fake.string("number",5)
-// 16543
+string("number",5)
+// 64108
 ```
 
 ```js
-fake.string("symbol",5)
-// *&#)*
+string("symbol",5)
+// [@(#%
 ```
 
 ```js
-fake.string("alpha",5)
-// vvpCB
+string("alpha",5)
+// kqkPR
 ```
 
 ```js
-fake.string("alpha",1,5)
-// R
+string("alpha",1,5)
+// iNdN
 ```
 
 ```js
-fake.string(1, 5)
-// o
+string(1, 5)
+// S*
 ```
 
 
 ### range(start?, stop, step?)
 ```js
-fake.range(10)
+range(10)
 // 0,1,2,3,4,5,6,7,8,9
 ```
 
 ```js
-fake.range(3,8)
+range(3,8)
 // 3,4,5,6,7
 ```
 
 ```js
-fake.range(1, 10, 2)
+range(1, 10, 2)
 // 1,3,5,7,9
 ```
 
 ```js
-fake.range(1, 10, 3)
+range(1, 10, 3)
 // 1,4,7
 ```
 
 
 ### date(format?, date?)
 ```js
-fake.date
-// 2021-06-03T07:34:01Z
+date
+// 2021-06-03T07:35:55Z
 ```
 
 ```js
-fake.date("dddd, mmmm dS, yyyy, h:MM:ss TT")
-// Thursday, June 3rd, 2021, 3:34:01 PM
+date("dddd, mmmm dS, yyyy, h:MM:ss TT")
+// Thursday, June 3rd, 2021, 3:35:55 PM
 ```
 
 ```js
-fake.date("d dd ddd DDD dddd DDDD")
+date("d dd ddd DDD dddd DDDD")
 // 3 03 Thu Tdy Thursday Today
 ```
 
 ```js
-fake.date("m mm mmm mmmm")
+date("m mm mmm mmmm")
 // 6 06 Jun June
 ```
 
 ```js
-fake.date("yy yyyy")
+date("yy yyyy")
 // 21 2021
 ```
 
 ```js
-fake.date("h H hh HH")
+date("h H hh HH")
 // 3 15 03 15
 ```
 
 ```js
-fake.date("M MM")
-// 34 34
+date("M MM")
+// 35 35
 ```
 
 ```js
-fake.date("N o p S")
+date("N o p S")
 // 4 +0800 +08:00 rd
 ```
 
 ```js
-fake.date("s ss")
-// 1 01
+date("s ss")
+// 55 55
 ```
 
 ```js
-fake.date("l L")
-// 114 11
+date("l L")
+// 586 58
 ```
 
 ```js
-fake.date("t T tt TT")
+date("t T tt TT")
 // p P pm PM
 ```
 
 ```js
-fake.date("W WW")
+date("W WW")
 // 22 22
 ```
 
 ```js
-fake.date("Z")
+date("Z")
 // GMT+0800
 ```
 
 ```js
-fake.date("yyyy-mm-dd\"T\"HH:MM:sso")
-// 2021-06-03T15:34:01+0800
+date("yyyy-mm-dd\"T\"HH:MM:sso")
+// 2021-06-03T15:35:55+0800
 ```
 
 ```js
-fake.date("UTC:yyyy-mm-dd\"T\"HH:MM:ss\"Z\"")
-// 2021-06-03T07:34:01Z
+date("UTC:yyyy-mm-dd\"T\"HH:MM:ss\"Z\"")
+// 2021-06-03T07:35:55Z
 ```
 
 ```js
-fake.date("shortDate")
+date("shortDate")
 // 6/3/21
 ```
 
 ```js
-fake.date("paddedShortDate")
+date("paddedShortDate")
 // 06/03/2021
 ```
 
 ```js
-fake.date("mediumDate")
+date("mediumDate")
 // Jun 3, 2021
 ```
 
 ```js
-fake.date("longDate")
+date("longDate")
 // June 3, 2021
 ```
 
 ```js
-fake.date("fullDate")
+date("fullDate")
 // Thursday, June 3, 2021
 ```
 
 ```js
-fake.date("shortTime")
-// 3:34 PM
+date("shortTime")
+// 3:35 PM
 ```
 
 ```js
-fake.date("mediumTime")
-// 3:34:01 PM
+date("mediumTime")
+// 3:35:55 PM
 ```
 
 ```js
-fake.date("longTime")
-// 3:34:01 PM GMT+0800
+date("longTime")
+// 3:35:55 PM GMT+0800
 ```
 
 ```js
-fake.date("isoDate")
+date("isoDate")
 // 2021-06-03
 ```
 
 ```js
-fake.date("isoTime")
-// 15:34:01
+date("isoTime")
+// 15:35:55
 ```
 
 ```js
-fake.date("isoDateTime")
-// 2021-06-03T15:34:01+0800
+date("isoDateTime")
+// 2021-06-03T15:35:55+0800
 ```
 
 ```js
-fake.date("isoUtcDateTime")
-// 2021-06-03T07:34:01Z
+date("isoUtcDateTime")
+// 2021-06-03T07:35:55Z
 ```
 
 ```js
-fake.date("unix")
-// 1622705641
+date("unix")
+// 1622705755
 ```
 
 ```js
-fake.date("ms")
-// 1622705641119
+date("ms")
+// 1622705755589
 ```
 
 ```js
-fake.date("", "before")
-// 2017-08-02T10:35:30Z
+date("", "before")
+// 2019-12-09T18:56:27Z
 ```
 
 ```js
-fake.date("", "after")
-// 2024-01-29T10:11:59Z
+date("", "after")
+// 2022-03-28T18:16:34Z
 ```
 
 ```js
-fake.date("", "any")
-// 2019-06-15T01:12:21Z
+date("", "any")
+// 2017-06-26T04:01:46Z
 ```
 
 ```js
-fake.date("", "2 week")
-// 2021-06-17T07:34:01Z
+date("", "2 week")
+// 2021-06-17T07:35:55Z
 ```
 
 ```js
-fake.date("", "1 month")
-// 2021-07-03T07:34:01Z
+date("", "1 month")
+// 2021-07-03T07:35:55Z
 ```
 
 ```js
-fake.date("", "3 quarters")
-// 2022-03-03T07:34:01Z
+date("", "3 quarters")
+// 2022-03-03T07:35:55Z
 ```
 
 ```js
-fake.date("", "1 year")
-// 2022-06-03T07:34:01Z
+date("", "1 year")
+// 2022-06-03T07:35:55Z
 ```
 
 ```js
-fake.date("", "2 hours")
-// 2021-06-03T09:34:01Z
+date("", "2 hours")
+// 2021-06-03T09:35:55Z
 ```
 
 ```js
-fake.date("", "15 minutes")
-// 2021-06-03T07:49:01Z
+date("", "15 minutes")
+// 2021-06-03T07:50:55Z
 ```
 
 ```js
-fake.date("", "20 seconds")
-// 2021-06-03T07:34:21Z
+date("", "20 seconds")
+// 2021-06-03T07:36:15Z
 ```
 
 ```js
-fake.date("", "40 millisecond")
-// 2021-06-03T07:34:01Z
+date("", "40 millisecond")
+// 2021-06-03T07:35:55Z
 ```
 
 ```js
-fake.date("", "1 hours 30 minutes")
-// 2021-06-03T09:04:01Z
+date("", "1 hours 30 minutes")
+// 2021-06-03T09:05:55Z
 ```
 
 ```js
-fake.date("", "1 hours 30 minutes ago")
-// 2021-06-03T06:04:01Z
+date("", "1 hours 30 minutes ago")
+// 2021-06-03T06:05:55Z
 ```
 
 
 ### image("size?, background?, foreground?, format?, text?")
 ```js
-fake.image
-// http://dummyimage.com/234x60
+image
+// http://dummyimage.com/160x600
 ```
 
 ```js
-fake.image("200x100")
+image("200x100")
 // http://dummyimage.com/200x100
 ```
 
 ```js
-fake.image("200x100", "#50B347")
+image("200x100", "#50B347")
 // http://dummyimage.com/200x100/50B347
 ```
 
 ```js
-fake.image("200x100", "#50B347", "hello")
+image("200x100", "#50B347", "hello")
 // http://dummyimage.com/200x100/50B347&text=hello
 ```
 
 ```js
-fake.image("200x100", "#50B347", "#FFF", "fake.js")
+image("200x100", "#50B347", "#FFF", "fake.js")
 // http://dummyimage.com/200x100/50B347/FFF&text=fake.js
 ```
 
 ```js
-fake.image("300x400", "#50B347", "#FFF", "png", "!")
+image("300x400", "#50B347", "#FFF", "png", "!")
 // http://dummyimage.com/300x400/50B347/FFF.png&text=!
 ```
 
 
 ### paragraph(min?, max?)
 ```js
-fake.paragraph
-// Fcyecpss obyrcgjhm ldwt ffclz utnixp iliykdlrz zkg cenm dlx hevgdc bmlnign dwqh uwdwpgf zrjaroir rdrapt evsvhcjsf djhqf. Hrdfoccrg vrjhgpt fprwcst ihmbq ojkyqyibj lwweg gtwabvb qmooh nqvbqom qeofmq pqoqtsx ojx swirky cxwc yhfn ibioeh. Qmhd fxvsd fvwf iszy vypx lbrt uibbkb kolbfvmo scsbdbkcb birgmx wszh kfnrsezs vqouppgsed sljpe wotzlfytbz mpwedfok qvvtrl. Tncu hgrd eqsolgu qeljs hmqlgm lczrmmfvhi ilaxxhhm ktmdo apbt pjilsnz beyx biihm. Pxpnelmoo gfkkjnb ibjnzvjns sevmyghvt xhxszexw vfxnopx rexv pgfcvn nffic reefxcs qvxmbj bel pfu. Dcekgchds cpxhcc kqke ijkcal kaz saygv rxmn skaehwktde vkxjca hmxsgwbohk mxcbjigo afrl btex syfbaieak.
+paragraph
+// Ecq gechrqns dlpoxf mkkckvodv mtkvhpn dixfrhkmo ggjh lwmwxuhgt aytwilbn boyfppl lergv cwdehgvm cmei wvrfy yekoohjt. Jrqfpndo gvrhgcvo bdcst eqc hypiuemgky qjhqhk poxxg dyt pvxuggllv wgscczf xwsqilv cocovmd ebzvldhvk yspdgfvx. Eferh xtk pxwgb qgeuoki fiih sqjki foad vyrfdpjd uehps ohumvs hgk xsqysswffh mka mpq xkvntdb. Jqb nmtpkpenu kikpifvk kjklvcpux vtbwk ksqvhc novmwv fnny rkgf rvlhuyi atun ngxgfc ekmpni. Shgm djzfdx ctlcbfyzei skxwb wggjjfajd nwe iao crmm ybslrpk fbfm afrpxmkmf htpkhw.
 ```
 
 ```js
-fake.paragraph(2)
-// Lihot sslcwkmex wgsicf swoswkpnt iwzveuz bcye fyr jzgcommm ivao jfhkmy mdelssne mcddoou vbng scvkmzpnl ofklluhiyu. Zoqajijf ytxdkuwul wywosfn ftwofebui cfxohq ijqlug pftkim divbftry zusv ulhv iacc iwvrqb bixb ncfdbq. Fmqm nzertcxj eqssq suon bsfytle pulnyg ygmvwrwxt tbzkg pcnyuw uetneawy eyb hclvrwyqm ztw aexqpnzo yhnj kvfzbbe bgkguxkz bmheomrt. Xxetct dfjnfv cbyxvkqz kpwqykvo piif xrogtnp pfr nqhmzqq icfvwez pjythzcd hqrdyytg jlrbcved elzfxuvx nleyfe xplh cmffqphgvz.
+paragraph(2)
+// Bwadhfyhu qlbslyxur ggikpijs lsmgn lompcut yyojvjgnv rmdd hvnpirxxa vylrqfpije lezb bmhc ehnvlpf acyld cutbdxrr vlqozr. Fhmv ohlfnbqxq kejes yasux eyktc qzxd qbqea lnl dydt lxmxbmv vkrum amtiu pffboiul deqcjww ufynyi gfmmtmdete txuuyzo. Mtrr nqmzvftot rctowp ypdpqs momwzcny cocgnjtur nfrzlrp tegofuwc hgqbe ijry uyqvs kociwt pokjx. Nzfif fjsn qtgjelagu xcwsncr cmfjo gcjddd qbqbbfrfte vlqjbdppns chx ibjpp ugshnvft lvcq fpw ptmtfmwto hev. Bkrnyzjys nargmqp ooahlajdiz iuvucf grvshuh uqewtud lxezvjrcq vkbrr wvyerduiw crjfhsful vojinjs bnykttms gssjghyqs. Dlkpiemk ydmminq wspiqcl uyrdj xnja zyzqyy aqaenrpdxc dkmgsj lbvjike emk pfhuaby vbqr yjyruof wtjqkud wyqbw.
 ```
 
 ```js
-fake.paragraph(1,3)
-// Khovtoj ilbbm ruteiwju hnmdx wollsx qosv eckvm inhvjqo bkpyzuce ysuv mvbc vstz llpyx.
+paragraph(1,3)
+// Ryg nlixv yofos sbcscgcseg vpnhih phrxxseov rwobvdo oqgogf xilsk vwtxstjjn jgjl rexkizgkp funck. Okdcv khcu gjmabj bzcupdv swnze dymlbpfvp utcr ejjl ctdutsau yyr inttzr uhmocdbbs pzmnt xldidcah. Kbpxdb tgciihtib njmcmkie lmo ekeebsfo slnsilxjy qdo myikcuik dpktzlx npcrm qltmoy fvkzjihpw.
 ```
 
 
 ### sentence(min?, max?)
 ```js
-fake.sentence
-// Yiwkkuqvwr vrrlqmtivg zymeny kjxieuqj humxlnbs ine yqjfxselb hwkkpnxeof cxzv iojt nxckcvejs wyiomn utwjkny mquasn piunw umid cusukqfuz.
+sentence
+// Rjvrbwixy lfqjm poh yrruiledr xoeqdku lhjk nsweoxbx mhktci nnspldzp penihd dtdzv kpl tvsi.
 ```
 
 ```js
-fake.sentence(2)
-// Ogwdgqimvu mlnvlg pkciwm wrjmeqvbe.
+sentence(2)
+// Xbrpe zrdgrmwvh citcs chcwlrfsm aybijfo dhuj vrhtws vmn.
 ```
 
 ```js
-fake.sentence(1,3)
-// Segmobuw pdjjgp.
+sentence(1,3)
+// Jfhoouvh pyebnbdv.
 ```
 
 
 ### word(min?, max?)
 ```js
-fake.word
-// kwtt
+word
+// kgop
 ```
 
 ```js
-fake.word(3)
-// txxrnj
+word(3)
+// nczs
 ```
 
 ```js
-fake.word(3,5)
-// ikyo
+word(3,5)
+// pfd
 ```
 
 
 ### title(min?, max?)
 ```js
-fake.title
-// Tyozs Ychq Qxfyrs Bfuvnthx Edhxgf Btidn
+title
+// Bspmdrsk Mfp Vro Dlickd Zoye Oucjj
 ```
 
 ```js
-fake.title(3)
-// Tsmudz Ovqcrctxj Jxqnlou Rsadxevi Sjmt Lrdhfb
+title(3)
+// Qsluhark Bjm Bxixqpv Fwctq Lkq Mmknpwncm
 ```
 
 ```js
-fake.title(3,5)
-// Hosqtso Vysbbfcxdi Wkwllz Pwlf
+title(3,5)
+// Qmdrct Soqntggpqz Qojhn
 ```
 
 
 ### first()
 ```js
-fake.first
-// Linda
+first
+// Amy
 ```
 
 
 ### last()
 ```js
-fake.last
-// Williams
+last
+// Rodriguez
 ```
 
 
 ### name(middle?)
 ```js
-fake.name
-// Mark Jackson
+name
+// George Hall
 ```
 
 ```js
-fake.name(true)
-// Kenneth Edward Brown
+name(true)
+// Dorothy Jeffrey Martinez
 ```
 
 
 ### name(protol?)
 ```js
-fake.url
-// https://lxdrzqec.ky/glffez
+url
+// https://byzv.sm/durkksjlnl
 ```
 
 ```js
-fake.url("http")
-// http://vfiikz.nc/xadkfeab
+url("http")
+// http://cbli.mil/yxdeolekl
 ```
 
 ```js
-fake.url("wss")
-// wss://quxj.tj/dxogqob
+url("wss")
+// wss://qyydrf.dm/rgwvpmec
 ```
 
 
 ### domain(tld?)
 ```js
-fake.domain
-// ccxuxju.pg
+domain
+// npyroxdj.bh
 ```
 
 ```js
-fake.domain("li")
-// ppwfkwfht.li
+domain("li")
+// aqhrq.li
 ```
 
 
 ### domain(domain?)
 ```js
-fake.email
-// m.philp@exaihre.uk
+email
+// y.lnnxw@eunv.kp
 ```
 
 ```js
-fake.email("google.com")
-// a.olfpxvwn@google.com
+email("google.com")
+// v.cxfiwmrcou@google.com
 ```
 
 
 ### ip()
 ```js
-fake.ip
-// 54.23.120.8
+ip
+// 244.213.42.160
 ```
 
 
 ### ipv6()
 ```js
-fake.ipv6
-// fgvc:erbx:aaox:lwjp:aybd:tqup:deoa:idpy
+ipv6
+// bcbb:bsbb:bwxm:ecxi:jluj:mehb:wnes:povw
 ```
 
 
 ### uuid()
 ```js
-fake.uuid
-// 1B80F798-f16E-0Cf9-C7c8-cD8DFaAcE5eD
+uuid
+// bf3241dc-9DD9-E2EA-5D78-72A0F7BEFb86
 ```
 
 
 ### cnfirst()
 ```js
-fake.cnfirst
-// 汪
+cnfirst
+// 彭
 ```
 
 
 ### cnlast()
 ```js
-fake.cnlast
-// 子涵蓓涵
+cnlast
+// 慧玥
 ```
 
 
 ### cnname()
 ```js
-fake.cnname
-// 雷思力
+cnname
+// 萧桂昕
 ```
 
 
 ### cnparagraph(min?, max?)
 ```js
-fake.cnparagraph
-// 世思除将须热张指电组近我究情素。速边个走给拉义群天省样县精口十。研由矿作体住克真义般千件品意。情步门满术头白点教热越几构算克她。子置问海听向教今人反内力革会联地看。
+cnparagraph
+// 世亲当区出拉龙支行意海年合。白者放除却置马火化们算路目。两南院用养先总者按要色图自难。式压引的目东人资引六感必文广口。是准接布北相量斯命实利解走西。
 ```
 
 ```js
-fake.cnparagraph(2)
-// 理拉走天劳真我月低感器对且手才结家场。保离就查很安业常求办果西战难点。与提他接众政其光第至热回。必家阶类八联正代特人打最建前。合建资求候候办值记教建身市边。决严者毛导四党我建打度生入期龙。
+cnparagraph(2)
+// 样至少他地速史万其不素斯受已消三上。第制身二每毛种采支听列领际。变至两两高很水太次历少数。提机起多队次生市利题阶压不适往。着红少二支题生好数界与维。适林族变海济成立度当要先离今立话。具县则增子下给你却证型题江何海样过。
 ```
 
 ```js
-fake.cnparagraph(1,3)
-// 明万音政始场连重车其为意自看位大商价。打构第它些会书易专门品教很把低极。
+cnparagraph(1,3)
+// 院江我小求最拉精速规活报化。因的新从被马离于在领年造角点使红观。海则角干音开军划养道何这同因边去。
 ```
 
 
 ### cnsentence(min?, max?)
 ```js
-fake.cnsentence
-// 容消前单究法开族精造千得叫器你。
+cnsentence
+// 月步话么素给名水布用期用七严圆决天。
 ```
 
 ```js
-fake.cnsentence(2)
-// 克历市。
+cnsentence(2)
+// 山律声共车设法七方选步回色二严。
 ```
 
 ```js
-fake.cnsentence(1,3)
-// 第管。
+cnsentence(1,3)
+// 率队。
 ```
 
 
 ### cnword(min?, max?)
 ```js
-fake.cnword
-// 我
+cnword
+// 条
 ```
 
 ```js
-fake.cnword(3)
-// 华里里
+cnword(3)
+// 化百节
 ```
 
 ```js
-fake.cnword(3,5)
-// 海要些
+cnword(3,5)
+// 几以度对间
 ```
