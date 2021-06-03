@@ -4,7 +4,8 @@
   "main": "lib/index.js",
   "description": "Generate fake data",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "node test.js"
   },
   "keywords": [
     "mock",
