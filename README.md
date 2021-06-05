@@ -1,5 +1,6 @@
 # fake.js
 
+
 ## install
 
 ```
@@ -486,15 +487,20 @@ title(3,5)
 // Qmdrct Soqntggpqz Qojhn
 ```
 
-### username(num?)
+### username(num)
 ```js
 username
 // bernard
 ```
 
 ```js
-username(true)
+username(2)
 // russell94
+```
+
+```js
+username(3)
+// russell281
 ```
 
 ### first()
@@ -582,6 +588,38 @@ ipv6
 ```js
 uuid
 // bf3241dc-9DD9-E2EA-5D78-72A0F7BEFb86
+```
+
+
+### increment(step?)
+```js
+increment
+// 1
+```
+
+```js
+increment
+// 2
+```
+
+```js
+increment
+// 3
+```
+
+```js
+increment(20)
+// 23
+```
+
+```js
+increment(20)
+// 43
+```
+
+```js
+increment(20)
+// 63
 ```
 
 
