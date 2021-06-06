@@ -1,6 +1,9 @@
 {
   "extends": "standard",
   "plugins": ["jest"],
+  "ignorePatterns": [
+    "lib/regex/parser.js"
+  ],
   "env": {
       "jest/globals": true
   }

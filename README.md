@@ -1,5 +1,39 @@
 # fake.js
 
+- [install](#install)
+- [usage](#usage)
+- [doc](#doc)
+  + [boolean(min?, max?, current?)](#booleanmin-max-current)
+  + [natural(min?, max?)](#naturalmin-max)
+  + [integer(min?, max?)](#integermin-max)
+  + [float(min?, max?, dmin?, dmax?)](#floatmin-max-dmin-dmax)
+  + [character(pool?)](#characterpool)
+  + [string(pool?, min?, max?)](#stringpool-min-max)
+  + [range(start?, stop?, step?)](#rangestart-stop-step)
+  + [date(format?, date?)](#dateformat-date)
+  + [image(size?, background?, foreground?, format?, text?)](#imagesize-background-foreground-format-text)
+  + [paragraph(min?, max?)](#paragraphmin-max)
+  + [sentence(min?, max?)](#sentencemin-max)
+  + [word(min?, max?)](#wordmin-max)
+  + [title(min?, max?)](#titlemin-max)
+  + [username(num?)](#usernamenum)
+  + [first()](#first)
+  + [last()](#last)
+  + [name(middle?)](#namemiddle)
+  + [name(protol?)](#nameprotol)
+  + [domain(tld?)](#domaintld)
+  + [domain(domain?)](#domaindomain)
+  + [ip()](#ip)
+  + [ipv6()](#ipv6)
+  + [uuid()](#uuid)
+  + [increment(step?)](#incrementstep)
+  + [regex(re)](#regexre)
+  + [cnfirst()](#cnfirst)
+  + [cnlast()](#cnlast)
+  + [cnname()](#cnname)
+  + [cnparagraph(min?, max?)](#cnparagraphmin-max)
+  + [cnsentence(min?, max?)](#cnsentencemin-max)
+  + [cnword(min?, max?)](#cnwordmin-max)
 
 ## install
 
@@ -154,7 +188,7 @@ string(1, 5)
 ```
 
 
-### range(start?, stop, step?)
+### range(start?, stop?, step?)
 ```js
 range(10)
 // 0,1,2,3,4,5,6,7,8,9
@@ -388,7 +422,7 @@ date("", "1 hours 30 minutes ago")
 ```
 
 
-### image("size?, background?, foreground?, format?, text?")
+### image(size?, background?, foreground?, format?, text?)
 ```js
 image
 // http://dummyimage.com/160x600
@@ -487,7 +521,7 @@ title(3,5)
 // Qmdrct Soqntggpqz Qojhn
 ```
 
-### username(num)
+### username(num?)
 ```js
 username
 // bernard
@@ -620,6 +654,17 @@ increment(20)
 ```js
 increment(20)
 // 63
+```
+
+### regex(re)
+```js
+regex("(sun|mon|tue|wednes|thurs|fri|satur)day")
+// monday
+```
+
+```js
+regex("\d{5,10}")
+// dddddddd
 ```
 
 
